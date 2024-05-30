@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 2em;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 1.5px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(198, 6, 6);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(227, 143, 143);
+}
+
+.container {
+    margin: auto;
+}
+
+.color-acento {
+    color: rgb(198, 6, 6);
+}
+header {
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding-left: 0px; 
+}
+
+header nav .logo-link {
+    margin-right: auto; 
+}
+
+header nav .logo-link img {
+    width: 140px;
+    height: 90px;
+    background-color: black;
+}
+
+
+header a.button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 1.5px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+header a.button:hover {
+    background-color: rgb(227, 143, 143);
+    color: black; 
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right; 
+    height: 90vh;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    background-image: linear-gradient(
+        0deg,
+        rgba(184, 184, 190, 0),
+        rgba(184, 184, 190, 0)
+    ), url("media/fondojordan.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    padding: 20%; 
+}
+.hero-content {
+    max-width: 20%; 
+}
+
+#hero h1 {
+    margin-right: 150px; 
+    font-size: 3.5em; 
+    line-height: 1.1;
+    word-spacing: -3px;
+}
+
+
+
+#history .container {
+    text-align: center;
+    padding: 100px 12px;
+    background-color: #000000; /
+}
+
+#history .container .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#history .container .content .text {
+    width: 60%;
+    text-align: left;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: "Arial", sans-serif; 
+}
+
+#history .container .content .image img {
+    width: 80%;
+    border-radius: 15px;
+}
+#history .container .content .text h2 {
+    margin-left: 120px; 
+    margin-bottom: 0px;
+}
+#history .container .content .text .color-acento {
+    margin-left: 120px; 
+    margin-top: 0px;
+}
+
+
+#nuestros-productos {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#nuestros-productos .container {
+    padding: 100px 0px;
+}
+
+#nuestros-productos h2 {
+    margin-top: 0;
+}
+
+#nuestros-productos .produc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#nuestros-productos .carta {
+    background-size: cover;
+    background-position: center;
+    width: 450px; 
+    height: 280px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.carta:first-child {
+    background-image: url("media/jordancarta1.png");
+}
+
+.carta:nth-child(2) {
+    background-image: url("media/nikecarta.jpg");
+}
+
+.carta:nth-child(3) {
+    background-image: url("media/j1t.png");
+}   
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000;
+    color: #fff;
+}
+
+
+#calidad .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 12px;
+    background-color: #000000;
+}
+
+#calidad .container .mizapa {
+    max-width: 50%; 
+    margin-right: 100px; 
+    border-radius: 20px;
+}
+
+#calidad .container .lista {
+    list-style: none;
+    padding: 0;
+}
+
+#calidad .container .lista li {
+    text-align: left;
+    margin-left: 20px; 
+}
+
+#calidad li{
+    margin: 12px 0px;
+    font-weight: bold;
+    color: #fff;
+}
+footer { 
+    background-color: #000000;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-title {
+    font-size: 3em;
+    margin-bottom: 10px; 
+    color: #fff;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    border-radius: 15px;
+    border: 1.5px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: rgb(227, 143, 143);
+    color: black;
+}
+#cambio-color {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 1.5px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    background-color: rgb(198, 6, 6);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#cambio-color:hover {
+    background-color: rgb(227, 143, 143);
+    color: black;
+}
